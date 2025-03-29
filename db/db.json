@@ -1,0 +1,199 @@
+{
+  "book": [
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "isbn": "978-0-06-112008-4",
+      "genre": "romance",
+      "publishedYear": 2025,
+      "coverImage": "https://images.unsplash.com/photo-1741565697191-7924f3dd1fb4?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "A novel about the serious issues of rape and racial inequality.",
+      "reviews": [
+        {
+          "id": 1,
+          "userId": 1,
+          "rating": 5,
+          "comment": "An amazing classic! Highly recommend.",
+          "date": "2023-03-15T16:39:58.256Z"
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "rating": 4,
+          "comment": "Great story, but a bit slow at times.",
+          "date": "2025-03-15T16:39:58.256Z"
+        },
+        {
+          "id": 3,
+          "comment": "Test comment",
+          "date": "2025-03-29T03:06:54.033Z"
+        }
+      ],
+      "id": "1"
+    },
+    {
+      "title": "The Great Gatsby",
+      "author": "BY F SCOTT FITZGERALD",
+      "isbn": "238-1-99-112008-4",
+      "genre": "fiction",
+      "publishedYear": 2025,
+      "coverImage": "https://images.unsplash.com/photo-1741471884167-a2b08fb14a3e?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "A novel about the serious issues of rape and racial inequality.",
+      "reviews": [
+        {
+          "id": 1,
+          "userId": 1,
+          "rating": 5,
+          "comment": "An amazing classic! Highly recommend.",
+          "date": "2022-11-15T15:52:41.033Z"
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "rating": 4,
+          "comment": "Great story, but a bit slow at times.",
+          "date": "2024-06-24T15:52:41.033Z"
+        },
+        {
+          "id": 3,
+          "comment": "Great book!",
+          "userId": 2,
+          "date": "2025-03-15T15:52:41.033Z"
+        },
+        {
+          "id": 4,
+          "comment": "I just like this book!",
+          "userId": 2,
+          "date": "2025-03-15T16:39:58.256Z"
+        }
+      ],
+      "id": "2"
+    },
+    {
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "isbn": "813.3",
+      "genre": "fantasy",
+      "publishedYear": 2025,
+      "coverImage": "https://images.unsplash.com/photo-1702920663761-7ddd6825f952?q=80&w=2268&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D(",
+      "description": "Moby-Dick; or, The Whale is an 1851 epic novel by American writer Herman Melville. The book is centered on the sailor Ishmael's narrative of the maniacal quest of Ahab, captain of the whaling ship Pequod, for vengeance against Moby Dick, the giant white sperm whale that bit off his leg on the ship's previous voyage. Test edit",
+      "reviews": [
+        {
+          "id": 1,
+          "comment": "Is very good",
+          "userId": 2,
+          "date": "2025-03-20T01:06:08.525Z"
+        }
+      ],
+      "id": "3"
+    },
+    {
+      "id": "0f35",
+      "title": "To kill a Mockingbird",
+      "author": "Emily Bronte",
+      "isbn": "0-486-29256-8",
+      "genre": "fantasy",
+      "publishedYear": 2025,
+      "coverImage": "https://images.unsplash.com/photo-1730377567841-32ec034d3921?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "This is a test",
+      "reviews": []
+    }
+  ],
+  "person": [
+    {
+      "id": "1",
+      "name": "Marie Doe",
+      "email": "johndoe@example.com",
+      "password": "hashedpassword",
+      "bookCollection": [1, 3, 5],
+      "avatar": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "2",
+      "name": "Emily Doe",
+      "email": "a",
+      "password": "a",
+      "bookCollection": [1, 3, 5],
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "movie": [
+    {
+      "title": "Interestelar",
+      "author": "Sony",
+      "genre": "fantasy",
+      "year": 2017,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Son como niños",
+      "author": "Universal",
+      "genre": "comedy",
+      "year": "2015"
+    },
+    {
+      "id": "3",
+      "title": "Cuphead LiveAction",
+      "author": "Disney",
+      "genre": "Animate",
+      "year": "2020"
+    },
+    {
+      "id": "4",
+      "title": "The Maze runner",
+      "author": "Disney Plus",
+      "genre": "fantasy",
+      "year": 2014
+    },
+    {
+      "id": "5",
+      "title": "Transformers",
+      "author": "Paramount",
+      "genre": "fantasy",
+      "year": 2021
+    },
+    {
+      "id": "6",
+      "title": "Shrek",
+      "author": "Disney",
+      "genre": "fantasy",
+      "year": 2025
+    },
+    {
+      "id": "7",
+      "title": "Toy story",
+      "author": "Disney",
+      "genre": "animate",
+      "year": 2025
+    },
+    {
+      "id": "8",
+      "title": "Cars",
+      "author": "Disney",
+      "genre": "animate",
+      "year": 2025
+    },
+    {
+      "id": "9",
+      "title": "Halo Movie",
+      "author": "Universal",
+      "genre": "fantasy",
+      "year": 2025
+    },
+    {
+      "title": "Intensamente",
+      "author": "Disney Plus",
+      "genre": "animate",
+      "year": 2025,
+      "id": "10"
+    },
+    {
+      "id": "11",
+      "title": "El gato con botas",
+      "author": "Disney",
+      "genre": "animate",
+      "year": 2025
+    }
+  ]
+}
