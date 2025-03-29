@@ -105,7 +105,11 @@
       "name": "Marie Doe",
       "email": "johndoe@example.com",
       "password": "hashedpassword",
-      "bookCollection": [1, 3, 5],
+      "bookCollection": [
+        1,
+        3,
+        5
+      ],
       "avatar": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
@@ -113,7 +117,11 @@
       "name": "Emily Doe",
       "email": "a",
       "password": "a",
-      "bookCollection": [1, 3, 5],
+      "bookCollection": [
+        1,
+        3,
+        5
+      ],
       "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ],
@@ -194,6 +202,64 @@
       "author": "Disney",
       "genre": "animate",
       "year": 2025
+    }
+  ],
+  "pet": [
+    {
+      "id": "1",
+      "name": "Max",
+      "owner": "Luis alejandro",
+      "breed": "perro",
+      "age": 2,
+      "birthdayDate": 2023
+    },
+    {
+      "id": "2",
+      "name": "Toby",
+      "owner": "Juan alverto",
+      "breed": "perro",
+      "age": 4,
+      "birthdayDate": 2021
+    },
+    {
+      "id": "3",
+      "name": "Luna",
+      "owner": "Ana sofia",
+      "breed": "gato",
+      "age": 1,
+      "birthdayDate": 2024
+    },
+    {
+      "name": "Capi",
+      "owner": "Danel hernesto",
+      "breed": "perro",
+      "age": "1",
+      "birthdayDate": 2025,
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "name": "Sol",
+      "owner": "Julian alvarez",
+      "breed": "Gato",
+      "age": "1",
+      "birthdayDate": 2025
+    },
+    {
+      "id": "6",
+      "name": "Luna",
+      "owner": "Luis manuel",
+      "breed": "Perro",
+      "age": "2",
+      "birthdayDate": 2025
+    },
+    {
+      "id": "6477",
+      "name": "Piolin",
+      "owner": "Cristian Jose",
+      "breed": "Perro",
+      "age": "8",
+      "birthdayDate": 2025
     }
   ]
 }

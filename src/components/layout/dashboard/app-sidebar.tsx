@@ -1,7 +1,14 @@
 "use client";
 
 import * as React from "react";
-import { BookText, Frame, Map, PieChart, TvMinimalPlay } from "lucide-react";
+import {
+  BookText,
+  Dog,
+  Frame,
+  Map,
+  PieChart,
+  TvMinimalPlay,
+} from "lucide-react";
 import { NavProjects } from "./nav-projects";
 import { NavUser } from "./nav-user";
 import {
@@ -30,6 +37,11 @@ const data = {
       name: "Movies",
       url: "/home/movies",
       icon: TvMinimalPlay,
+    },
+    {
+      name: "Pets",
+      url: "/home/pets",
+      icon: Dog,
     },
     {
       name: "Sales & Marketing",
