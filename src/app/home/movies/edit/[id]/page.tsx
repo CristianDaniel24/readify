@@ -44,7 +44,7 @@ export default function EditMovie() {
   return (
     <div className="container max-w-5xl mx-auto md:py-10">
       <div className="grid gap-5">
-        <h1 className="text-4xl leading-none font-medium">Edit Book</h1>
+        <h1 className="text-4xl leading-none font-medium">Edit Movie</h1>
         <MovieForm movie={movie} onSubmit={handleSubmit} />
       </div>
     </div>

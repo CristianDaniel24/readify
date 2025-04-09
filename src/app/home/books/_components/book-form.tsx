@@ -30,10 +30,13 @@ import {
   BookFormType,
 } from "@/lib/definitions/book-form-definition";
 import { cn } from "@/lib/utils";
+import { genreService } from "@/services/genre.service";
 import { IBook } from "@/types/book-interface";
+import { IGenre } from "@/types/genre.interface";
 import { format } from "date-fns";
 import { CalendarIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -48,6 +51,11 @@ export default function BookForm({ book, onSubmit }: Readonly<Props>) {
     bookFormDefinition.asignDefaultValues(book)
   );
   const router = useRouter();
+  const [genres, setGenres] = useState<IGenre[]>([]);
+
+  useEffect(() => {
+    genreService.getAll().then((genres) => setGenres(genres));
+  }, [book.id]);
 
   return (
     <Form {...form}>
@@ -110,9 +118,11 @@ export default function BookForm({ book, onSubmit }: Readonly<Props>) {
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
-                    <SelectItem value="fiction">Fiction</SelectItem>
-                    <SelectItem value="romance">Romance</SelectItem>
-                    <SelectItem value="fantasy">Fantasy</SelectItem>
+                    {genres.map((g) => (
+                      <SelectItem key={g.id} value={g.id.toString()}>
+                        {g.name}
+                      </SelectItem>
+                    ))}
                   </SelectContent>
                 </Select>
                 <FormMessage />

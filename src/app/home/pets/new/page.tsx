@@ -7,7 +7,7 @@ import {
   petFormDefinition,
   PetFormType,
 } from "@/lib/definitions/pet-form-definition";
-import { IPet } from "@/types/pets-interface";
+import { IPet } from "@/types/pet-interface";
 import { petService } from "@/services/pets-service";
 
 export default function CreatePet() {

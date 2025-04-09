@@ -5,7 +5,7 @@ interface Props {
   params: Promise<{ id: string }>;
 }
 
-export default async function MovieDetails({ params }: Readonly<Props>) {
+export default async function PetDetails({ params }: Readonly<Props>) {
   const { id } = await params;
   const pet = await petService.findById(+id);
 

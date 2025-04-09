@@ -1,5 +1,5 @@
 import { getApiUrl } from "@/lib/utils";
-import { IPet } from "@/types/pets-interface";
+import { IPet } from "@/types/pet-interface";
 
 class PetService {
   private readonly url: string;
@@ -10,14 +10,14 @@ class PetService {
 
   async getAll(): Promise<IPet[]> {
     const res = await fetch(this.url);
-    const movie = await res.json();
-    return movie;
+    const pet = await res.json();
+    return pet;
   }
 
   async findById(id: number): Promise<IPet | undefined> {
     const res = await fetch(`${this.url}/${id}`);
-    const movie = await res.json();
-    return movie;
+    const pet = await res.json();
+    return pet;
   }
 
   async create(pet: IPet): Promise<IPet> {

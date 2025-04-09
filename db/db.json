@@ -4,7 +4,7 @@
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
       "isbn": "978-0-06-112008-4",
-      "genre": "romance",
+      "genre": "3",
       "publishedYear": 2025,
       "coverImage": "https://images.unsplash.com/photo-1741565697191-7924f3dd1fb4?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "A novel about the serious issues of rape and racial inequality.",
@@ -35,7 +35,7 @@
       "title": "The Great Gatsby",
       "author": "BY F SCOTT FITZGERALD",
       "isbn": "238-1-99-112008-4",
-      "genre": "fiction",
+      "genre": "3",
       "publishedYear": 2025,
       "coverImage": "https://images.unsplash.com/photo-1741471884167-a2b08fb14a3e?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "A novel about the serious issues of rape and racial inequality.",
@@ -73,7 +73,7 @@
       "title": "Moby-Dick",
       "author": "Herman Melville",
       "isbn": "813.3",
-      "genre": "fantasy",
+      "genre": "5",
       "publishedYear": 2025,
       "coverImage": "https://images.unsplash.com/photo-1702920663761-7ddd6825f952?q=80&w=2268&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D(",
       "description": "Moby-Dick; or, The Whale is an 1851 epic novel by American writer Herman Melville. The book is centered on the sailor Ishmael's narrative of the maniacal quest of Ahab, captain of the whaling ship Pequod, for vengeance against Moby Dick, the giant white sperm whale that bit off his leg on the ship's previous voyage. Test edit",
@@ -92,7 +92,7 @@
       "title": "To kill a Mockingbird",
       "author": "Emily Bronte",
       "isbn": "0-486-29256-8",
-      "genre": "fantasy",
+      "genre": "2",
       "publishedYear": 2025,
       "coverImage": "https://images.unsplash.com/photo-1730377567841-32ec034d3921?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "This is a test",
@@ -254,12 +254,84 @@
       "birthdayDate": 2025
     },
     {
-      "id": "6477",
       "name": "Piolin",
-      "owner": "Cristian Jose",
+      "owner": "Cristian andres",
       "breed": "Perro",
       "age": "8",
+      "birthdayDate": 2025,
+      "id": "6477"
+    },
+    {
+      "id": "480c",
+      "name": "Manchas",
+      "owner": "Andres gomez",
+      "breed": "Perro",
+      "age": "1",
       "birthdayDate": 2025
+    },
+    {
+      "id": "51ea",
+      "name": "Pluto",
+      "owner": "Julian alvarez",
+      "breed": "Perro",
+      "age": "1",
+      "birthdayDate": 2025
+    }
+  ],
+  "song": [
+    {
+      "name": "Fall away",
+      "author": "Twenty One Pilots",
+      "duration": "3.20",
+      "publicationDate": 2020,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Jumpsuit",
+      "author": "Twenty One Pilots",
+      "duration": "3.4",
+      "publicationDate": 2019
+    },
+    {
+      "id": "3",
+      "name": "Paladin strait",
+      "author": "Twenty One Pilots",
+      "duration": "5.1",
+      "publicationDate": 2025
+    },
+    {
+      "id": "4",
+      "name": "Car radio",
+      "author": "Twenty one Pilots",
+      "duration": "3.21",
+      "publicationDate": 2025
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "name": "Fiction"
+    },
+    {
+      "id": 2,
+      "name": "Romance"
+    },
+    {
+      "id": 3,
+      "name": "Thriller"
+    },
+    {
+      "id": 4,
+      "name": "Drama"
+    },
+    {
+      "id": 5,
+      "name": "Comedy"
+    },
+    {
+      "id": 6,
+      "name": "Action"
     }
   ]
 }

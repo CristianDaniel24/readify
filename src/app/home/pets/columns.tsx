@@ -9,12 +9,12 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { IMovie } from "@/types/movie-interface";
+import { IPet } from "@/types/pet-interface";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown, MoreHorizontal } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 
-export const columns: ColumnDef<IMovie>[] = [
+export const columns: ColumnDef<IPet>[] = [
   {
     accessorKey: "name",
     header: ({ column }) => {

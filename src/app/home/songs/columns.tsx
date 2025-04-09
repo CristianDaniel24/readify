@@ -9,22 +9,21 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { IBook } from "@/types/book-interface";
+import { ISong } from "@/types/song-interface";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown, MoreHorizontal } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
-import DeleteBookDialog from "./_components/delete-book";
 
-export const columns: ColumnDef<IBook>[] = [
+export const columns: ColumnDef<ISong>[] = [
   {
-    accessorKey: "title",
+    accessorKey: "name",
     header: ({ column }) => {
       return (
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Title
+          Name
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       );
@@ -35,8 +34,8 @@ export const columns: ColumnDef<IBook>[] = [
     header: "Author",
   },
   {
-    accessorKey: "genre",
-    header: "Genre",
+    accessorKey: "duration",
+    header: "Duration",
   },
   {
     id: "actions",
@@ -73,9 +72,6 @@ export const columns: ColumnDef<IBook>[] = [
               }
             >
               Copy book ID
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={(e) => e.preventDefault()}>
-              <DeleteBookDialog id={element.id} />
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

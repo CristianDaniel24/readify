@@ -16,12 +16,13 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import {} from "@/lib/definitions/pet-form-definition";
 import {
-  petFormDefinition,
-  PetFormType,
-} from "@/lib/definitions/pet-form-definition";
+  songFormDefinition,
+  SongFormType,
+} from "@/lib/definitions/song-form-definition";
 import { cn } from "@/lib/utils";
-import { IPet } from "@/types/pet-interface";
+import { ISong } from "@/types/song-interface";
 import { format } from "date-fns";
 import { CalendarIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -29,12 +30,14 @@ import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
 interface Props {
-  pet: IPet;
-  onSubmit: (value: PetFormType) => void;
+  song: ISong;
+  onSubmit: (value: SongFormType) => void;
 }
 
-export default function PetForm({ pet, onSubmit }: Readonly<Props>) {
-  const form = useForm<PetFormType>(petFormDefinition.asignDefaultValues(pet));
+export default function SongForm({ song, onSubmit }: Readonly<Props>) {
+  const form = useForm<SongFormType>(
+    songFormDefinition.asignDefaultValues(song)
+  );
   const router = useRouter();
 
   return (
@@ -55,12 +58,12 @@ export default function PetForm({ pet, onSubmit }: Readonly<Props>) {
         />
         <FormField
           control={form.control}
-          name="owner"
+          name="author"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Owner</FormLabel>
+              <FormLabel>Author</FormLabel>
               <FormControl>
-                <Input placeholder="Owner" {...field} />
+                <Input placeholder="Author" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -68,12 +71,12 @@ export default function PetForm({ pet, onSubmit }: Readonly<Props>) {
         />
         <FormField
           control={form.control}
-          name="breed"
+          name="duration"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Breed</FormLabel>
+              <FormLabel>Duration</FormLabel>
               <FormControl>
-                <Input placeholder="Breed" {...field} />
+                <Input placeholder="Duration" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -81,24 +84,11 @@ export default function PetForm({ pet, onSubmit }: Readonly<Props>) {
         />
         <FormField
           control={form.control}
-          name="age"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Age</FormLabel>
-              <FormControl>
-                <Input placeholder="Age" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="birthdayDate"
+          name="publicationDate"
           render={({ field }) => {
             return (
               <FormItem>
-                <FormLabel>Birthday Date</FormLabel>
+                <FormLabel>Publication Date</FormLabel>
                 <Popover>
                   <PopoverTrigger asChild>
                     <FormControl>

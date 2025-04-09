@@ -39,5 +39,14 @@ class BookService {
     const resBook = res.json();
     return resBook;
   }
+
+  async delete(id: number): Promise<boolean> {
+    try {
+      await fetch(`${this.url}/${id}`, { method: "DELETE" });
+      return Promise.resolve(true);
+    } catch (e) {
+      return Promise.resolve(false);
+    }
+  }
 }
 export const bookService = new BookService();

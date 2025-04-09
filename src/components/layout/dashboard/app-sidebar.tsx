@@ -4,8 +4,8 @@ import * as React from "react";
 import {
   BookText,
   Dog,
-  Frame,
   Map,
+  Music4,
   PieChart,
   TvMinimalPlay,
 } from "lucide-react";
@@ -44,8 +44,13 @@ const data = {
       icon: Dog,
     },
     {
+      name: "Songs",
+      url: "/home/songs",
+      icon: Music4,
+    },
+    {
       name: "Sales & Marketing",
-      url: "#",
+      url: "/home/marketing",
       icon: PieChart,
     },
     {
@@ -66,7 +71,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavProjects projects={data.options} />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <NavUser />
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>

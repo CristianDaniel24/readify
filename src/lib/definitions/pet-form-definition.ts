@@ -1,4 +1,4 @@
-import { IPet } from "@/types/pets-interface";
+import { IPet } from "@/types/pet-interface";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 

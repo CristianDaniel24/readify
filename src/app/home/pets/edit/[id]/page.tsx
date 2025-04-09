@@ -1,15 +1,14 @@
 "use client";
 
-import { movieService } from "@/services/movie-service";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { IPet } from "@/types/pets-interface";
+import { IPet } from "@/types/pet-interface";
 import { PetFormType } from "@/lib/definitions/pet-form-definition";
 import { petService } from "@/services/pets-service";
 import PetForm from "../../_components/pet-form";
 
-export default function EditMovie() {
+export default function EditPet() {
   const router = useRouter();
   const { id } = useParams<{ id: string }>();
   const [pet, setPet] = useState<IPet>();
@@ -46,7 +45,7 @@ export default function EditMovie() {
   return (
     <div className="container max-w-5xl mx-auto md:py-10">
       <div className="grid gap-5">
-        <h1 className="text-4xl leading-none font-medium">Edit Book</h1>
+        <h1 className="text-4xl leading-none font-medium">Edit Pet</h1>
         <PetForm pet={pet} onSubmit={handleSubmit} />
       </div>
     </div>
